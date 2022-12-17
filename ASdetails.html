@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAAS Project Website</title>
+    <!-- ICON -->
+    <link rel="icon" type="image/icon" href="/pic/f.ico"/>
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="./allContent.css">
+
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boostrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light position-fixed py-1 px-4">
+        <div class="container-fluid">
+          <div class="logo-navbar">
+            <a href="./index.html"><img src="./pic/Icon.png" alt=""></a>
+        </div>
+          <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <i class='text-black bx bx-menu'></i>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Security
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./ASdetails.html">Application Security</a></li>
+                  <li><a class="dropdown-item" href="./NSdetails.html">Network Security</a></li>
+                  <li><a class="dropdown-item" href="./CSdetails.html">Cloud Security</a></li>
+                  <li><a class="dropdown-item" href="./IOTsdetails.html">Internet of Things Security</a></li>
+                  <li><a class="dropdown-item" href="./AVSdetails.html">Anti Viruses Security</a></li>
+                  <li><a class="dropdown-item" href="./CISdetails.html">Critical Infrastructure Security</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">About</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <!-- header -->
+        <header>
+            <div class="content-all">
+                <h1>Application Security</h1>
+            </div>
+       </header>
+
+       <!--  -->
+       <section class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>Application security refers to security measures implemented at the application level to prevent data or code contained within the app from being stolen or hijacked. It includes security considerations during application development and design, as well as systems and approaches to protect apps after they are deployed.
+              Application security may include hardware, software, and procedures for identifying and mitigating security flaws. A router that prevents Internet users from viewing a computer's IP address is an example of hardware application security. However, application-level security measures, such as an application firewall that strictly defines what activities are allowed and prohibited, are typically built into the software. Procedures can include things like an application security routine with protocols like regular testing.
+              </p>
+          </div>
+          <div class="col-md-6">
+           <img src="./pic/Applacation security.jfif"/>
+          </div>
+        </div>
+       </section>
+
+
+
+       <section class="container py-5">
+        <div class="row">
+          <div class="col-md-6 order-1">
+           <h4 class="text-center fst-italic my-2">Authentication</h4>
+           <ol>
+            <li>
+              is used by a server when the server needs to know exactly who is accessing their information or site.
+            </li>
+            <li>
+              Authentication is used by a client when the client needs to know that the server is    system it claims to be.
+            </li>
+            <li>
+              Authentication by a client usually involves the server giving a certificate to the client in which a trusted third party such as Verisign or Thawte states that the server belongs to the entity (such as a bank) that the client expects it to.
+            </li>
+            <li>
+              Authentication does not determine what tasks the individual can do or what files the individual can see. Authentication merely identifies and verifies who the person or system is.
+            </li>
+            <li>
+              Usually, authentication by a server entails the use of a user name and password. Other ways to authenticate can be through cards, retina scans, voice recognition, and fingerprints.
+            </li>
+          </ol>
+
+          <h4 class="text-center fst-italic my-2">Authorization</h4>
+          <ol>
+           <li>
+            Authorization is a process by which a server determines if the client has permission to use a resource or access a file.
+           </li>
+           <li>
+            Authorization is usually coupled with authentication so that the server has some concept of who the client is that is requesting access.
+           </li>
+           <li>
+            The type of authentication required for authorization may vary; passwords may be required in some cases but not in others.
+           </li>
+           <li>
+            In some cases, there is no authorization; any user may use a resource or access a file simply by asking for it. Most of the web pages on the Internet require no authentication or authorization.
+           </li>
+         </ol>
+
+          </div>
+            <div class="col-md-6 order-0 text-center align-items-center">
+              <div class="pic-1 py-3">
+                <img src="./pic/Authentication.png"/>
+              </div>
+              <div class="pic-2 py-3">
+                <img src="./pic/Authorization.png"/>
+              </div>
+            </div>
+          </div>
+       </section>
+       
+
+
+       <section class="container py-5">
+        <h4 class="text-center fst-italic my-2">Encryption</h4>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+           <ol>
+            <li>
+              Encryption involves the process of transforming data so that it is unreadable by anyone who does not have a decryption key.
+            </li>
+            <li>
+              The Secure Shell (SSH) and Socket Layer (SSL) protocols are usually used in encryption processes.
+            </li>
+            <li>
+              All data in SSL transactions is encrypted between the client (browser) and the server (web server) before the data is transferred between the two.
+            </li>
+          </ol>
+        </div>
+          <div class="col-md-6 col-sm-12">
+            <ol>
+          <li>
+            All data in SSH sessions is encrypted between the client and the server when communicating at the shell.
+          <li>
+            By encrypting the data exchanged between the client and server, information like social security numbers, credit card numbers, and home addresses can be sent over the Internet with less risk of being intercepted during transit.
+          </li>
+        </ol>
+      </div>
+      
+          </div>
+       </section>
+        <!-- Footer -->
+       <div class="footer-copyright">
+        <p class="footer-copyright-text text-center m-auto">
+          <a class="footer-copyright-link text-black m-auto text-center" href="#" target="_self"> ©2022. | Designed By: Cyber Lions. </a>
+        </p>
+      </div>
+         <!-- Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        <!-- Js Link -->
+        <script text="text/javascript" src="./index.js"></script>
+
+        <!-- Boostrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,600&display=swap');
+/* =================Defualt==================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rgb(133, 131, 131); */
+}
+a{
+    text-decoration: none !important;
+}
+li{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/* ====Root==== */
+:root{
+    --colorwhite: #fff;
+    --colorblack: #000;
+}
+/* =============Navbaar================= */
+nav{
+    min-width: 100%;
+    z-index: 99;
+}
+.logo-navbar a img{
+    width: 100px;
+    height: 30px;
+}
+ul li a{
+    color: var(--colorblack) !important;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+}
+ul li a:hover{
+    color: #1c6aaa !important;
+}
+/* ============= Home ================= */
+header{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("https://imgs.search.brave.com/CaTArxIjmc91eWSuile7rkdTAlhLHTK525EFb-Hki0s/rs:fit:1000:619:1/g:ce/aHR0cHM6Ly9hcnQt/dTMuaW5mY2RuLm5l/dC9hcnRpY2xlc191/cGxvYWRzLzQvNDY1/Mi9QQ1Byb3RlY3Rp/b24ucG5n");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+}
+
+.content-home{
+    display: grid;
+    align-self: center;
+    padding-bottom: 250px;
+    text-align: center;
+    margin: auto;
+}
+.content-home h1{
+    font-size: 45px;
+    color: var(--colorwhite);
+    font-style: italic;
+    text-transform: uppercase;
+    padding-top: 155px;
+}
+/* ==================Security=================== */
+.security-content h1{
+    font-size: 25px;
+    font-style: italic;
+}
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    min-height: 430px;
+    perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 8px 8px 0 rgba(141, 141, 141, 0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: var(--colorwhite);
+  color: var(--colorblack);
+}
+.flip-card-back {
+  background-color: var(--colorwhite);
+  color: var(--colorblack);
+  transform: rotateY(180deg);
+}
+.flip-card-front img{
+    width: 70px;
+    height: 70px;
+    margin: 80px auto;
+    align-items: center;
+}
+.flip-card-front h1{
+    font-size: 20px;
+    font-style: italic;
+}
+.flip-card-back p{
+    padding: 20px 30px;
+    min-height: 230px;
+}
+.flip-card-back div a{
+    color: var(--colorblack);
+    padding: 8px 35px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: #7bbbf06b;
+    transition: 0.5s ease-in-out;
+    
+}
+.flip-card-back div a:hover{
+    background-color: #7bbbf0;
+}
+@media (max-width: 1200px){
+    .flip-card{
+        height: 500px;
+    }
+}
+@media (max-width: 991px){
+    .flip-card{
+        height: 400px;
+    }
+}
+/* back */
+.back-g{
+    width: 100%;
+    height: 20vh;
+    background: radial-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("./pic/markus-spiske-iar-afB0QQw-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Team section */
+.Team-content h1{
+    font-size: 25px;
+    font-style: italic;
+}
+.team-item{
+    min-height: 50vh;
+
+}
+.imgBx img{
+    height: 350px;
+}
+.card-team {
+    width: 250px;
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.card-team .content {
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+}
+.card-team:hover .content {
+    bottom: 0;
+    transition-delay: 0s;
+}
+.card-team .content .contentBx h3 {
+    text-transform: uppercase;
+    color: var(--colorwhite);
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    margin: -20px 0 15px;
+    line-height: 20px;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.card-team:hover .content .contentBx h3 {
+    opacity: 1;
+    transform: translateY(0);
+} 
+.card-team .content .contentBx h3 span {
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: initial;
+}
+.sci{
+    display: flex;
+    justify-content: center;
+    
+}
+.sci a{
+    margin: 0 10px;
+}
+.sci a .bx{
+    color: var(--colorblack);
+    font-size: 25px;
+    background-color: var(--colorwhite);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.sci a:nth-child(1) .bx:hover{
+    background: #4267B2;
+}
+.sci a:nth-child(2) .bx:hover{
+    background: #333;
+}
+.sci a:nth-child(3) .bx:hover{
+    background: rgb(252, 144, 144);
+}
+
+/* About */
+.About-content h1{
+    font-size: 25px;
+    font-style: italic;
+}
+.About-Items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: auto;
+    align-items: center;
+    gap: 60px;
+
+}
+.btn-about a{
+    color: var(--colorblack);
+    padding: 8px 35px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: #7bbbf06b;
+    transition: 0.5s ease-in-out;
+}
+.btn-about a:hover{
+    background-color: #7bbbf0;
+    color: var(--colorblack);
+}
+
+/* foote copy right */
+.footer-copyright{
+    width: 100%;
+    height: 25px;
+    background-color: #7bbbf0;
+    margin: 0; 
+    display: grid;
+}
+.footer-copyright-text .footer-copyright-text{
+    margin: auto;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.footer-copyright-text .footer-copyright-text .footer-copyright-link{
+    text-align: center;
+    margin: auto;
+    color: var(--colorblack);
+}
+@media (max-width: 995px) {
+    .About-Items{
+        grid-template-columns: 1fr;
+    }
+
+}
